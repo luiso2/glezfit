@@ -16,7 +16,7 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-100 flex items-center justify-between px-6 md:px-20 h-[70px] md:h-[90px] transition-all duration-400 ${
+      className={`fixed top-0 left-0 right-0 z-100 flex items-center justify-between px-6 md:px-10 lg:px-20 h-[70px] md:h-[90px] transition-all duration-400 ${
         scrolled
           ? "bg-bg-warm/92 backdrop-blur-[20px] shadow-[0_1px_30px_rgba(0,0,0,0.06)]"
           : "bg-transparent"
@@ -32,7 +32,7 @@ export function Navbar() {
       </a>
 
       {/* Desktop nav */}
-      <div className="hidden md:flex gap-10 items-center">
+      <div className="hidden lg:flex gap-10 items-center">
         {NAV_LINKS.map((link) => (
           <a
             key={link.href}
@@ -46,14 +46,14 @@ export function Navbar() {
 
       <a
         href="#"
-        className="hidden md:inline-flex px-8 py-3.5 bg-accent text-white text-xs font-semibold tracking-[2.5px] shadow-[0_8px_24px_rgba(232,150,90,0.22),0_4px_12px_rgba(0,0,0,0.18)] transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(232,150,90,0.3)]"
+        className="hidden lg:inline-flex px-8 py-3.5 bg-accent text-white text-xs font-semibold tracking-[2.5px] shadow-[0_8px_24px_rgba(232,150,90,0.22),0_4px_12px_rgba(0,0,0,0.18)] transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(232,150,90,0.3)]"
       >
         SHOP NOW
       </a>
 
       {/* Mobile hamburger */}
       <button
-        className="md:hidden p-2"
+        className="lg:hidden p-2"
         onClick={() => setMobileOpen(!mobileOpen)}
         aria-label="Toggle menu"
       >
@@ -66,7 +66,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden fixed top-[70px] left-0 right-0 bg-bg-warm/97 backdrop-blur-[20px] p-8 flex flex-col items-center gap-6 z-99">
+        <div className="lg:hidden fixed top-[70px] md:top-[90px] left-0 right-0 bg-bg-warm/97 backdrop-blur-[20px] p-8 flex flex-col items-center gap-6 z-99">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}

@@ -15,7 +15,7 @@ export function Footer() {
   return (
     <>
       <div className="w-full h-px bg-border-subtle" />
-      <footer className="bg-bg-darker px-6 md:px-[120px] py-10 md:py-20 flex flex-col gap-16">
+      <footer className="bg-bg-darker px-6 md:px-10 lg:px-[120px] py-10 md:py-[60px] lg:py-20 flex flex-col gap-16">
         {/* Top: Brand + Nav */}
         <div className="flex flex-col md:flex-row justify-between gap-10">
           <ScrollReveal direction="left" className="max-w-[340px] flex flex-col gap-5">
@@ -43,7 +43,7 @@ export function Footer() {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal direction="right" className="flex flex-col md:flex-row gap-8 md:gap-20">
+          <ScrollReveal direction="right" className="flex flex-col sm:flex-row sm:flex-wrap md:flex-nowrap gap-8 md:gap-10 lg:gap-20">
             {FOOTER_COLUMNS.map((col) => (
               <div key={col.title} className="flex flex-col gap-[18px] min-w-[150px]">
                 <span className="text-[11px] font-semibold tracking-[4px] text-text-light">
@@ -70,7 +70,7 @@ export function Footer() {
         {/* Newsletter */}
         <ScrollReveal className="flex flex-col gap-7">
           <div className="w-full h-px bg-border-subtle" />
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-10">
             <div className="flex flex-col gap-2">
               <h3 className="font-serif text-2xl font-medium tracking-[-0.3px] text-text-light">
                 Unete al Club GLEZFIT
@@ -80,13 +80,13 @@ export function Footer() {
               </p>
             </div>
             <form
-              className="flex flex-col md:flex-row w-full md:w-auto"
+              className="flex flex-col sm:flex-row w-full lg:w-auto"
               onSubmit={(e) => e.preventDefault()}
             >
               <input
                 type="email"
                 placeholder="Tu correo electronico"
-                className="w-full md:w-[300px] h-[52px] bg-[#16161A] border border-border-input md:border-r-0 px-6 font-sans text-sm text-text-light outline-none transition-colors duration-300 focus:border-accent placeholder:text-text-placeholder"
+                className="w-full sm:w-[300px] h-[52px] bg-[#16161A] border border-border-input sm:border-r-0 px-6 font-sans text-sm text-text-light outline-none transition-colors duration-300 focus:border-accent placeholder:text-text-placeholder"
               />
               <button
                 type="submit"

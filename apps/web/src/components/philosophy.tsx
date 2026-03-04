@@ -6,7 +6,7 @@ export function Philosophy() {
   return (
     <section
       id="filosofia"
-      className="bg-bg-warm px-6 md:px-[120px] py-[60px] md:py-[100px] grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center"
+      className="bg-bg-warm px-6 md:px-10 lg:px-[120px] py-[60px] md:py-20 lg:py-[100px] grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center"
     >
       <ScrollReveal direction="left" className="flex flex-col gap-7 order-2 md:order-1">
         <span className="text-[11px] font-medium tracking-[4px] text-accent">
@@ -56,7 +56,7 @@ export function Philosophy() {
         </a>
       </ScrollReveal>
 
-      <ScrollReveal direction="right" className="overflow-hidden h-[400px] md:h-[600px] relative order-1 md:order-2">
+      <ScrollReveal direction="right" className="overflow-hidden h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] relative order-1 md:order-2">
         <Image
           src="/images/generated-1772592680787.png"
           alt="Filosofia GLEZFIT"

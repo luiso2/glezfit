@@ -6,7 +6,7 @@ export function Testimonials() {
   return (
     <section
       id="testimonios"
-      className="bg-bg-light px-6 md:px-[120px] py-[60px] md:py-[100px] flex flex-col items-center gap-16"
+      className="bg-bg-light px-6 md:px-10 lg:px-[120px] py-[60px] md:py-20 lg:py-[100px] flex flex-col items-center gap-16"
     >
       <ScrollReveal>
         <span className="text-[11px] font-semibold tracking-[4px] text-accent">
@@ -20,10 +20,10 @@ export function Testimonials() {
         </h2>
       </ScrollReveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
         {TESTIMONIALS.map((t, i) => (
           <ScrollReveal key={t.name} direction="scale" delay={i * 0.1}>
-            <div className="bg-white p-10 flex flex-col gap-5 shadow-[0_12px_32px_rgba(26,25,24,0.07),0_4px_8px_rgba(0,0,0,0.03)] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1.5 hover:shadow-[0_20px_48px_rgba(26,25,24,0.11)]">
+            <div className="bg-white p-6 sm:p-10 flex flex-col gap-5 shadow-[0_12px_32px_rgba(26,25,24,0.07),0_4px_8px_rgba(0,0,0,0.03)] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1.5 hover:shadow-[0_20px_48px_rgba(26,25,24,0.11)]">
               <div className="flex gap-1">
                 {Array.from({ length: 5 }).map((_, si) => (
                   <Star

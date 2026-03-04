@@ -7,7 +7,7 @@ const ease = [0.16, 1, 0.3, 1] as const;
 
 export function Hero() {
   return (
-    <section className="relative w-full h-[100vh] min-h-[600px] md:h-[900px] overflow-hidden">
+    <section className="relative w-full h-[100vh] min-h-[600px] lg:h-[900px] overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
@@ -24,7 +24,7 @@ export function Hero() {
       <div className="absolute inset-0 z-[1] bg-gradient-to-r from-bg-warm/82 to-transparent" />
 
       {/* Content */}
-      <div className="relative z-[2] flex flex-col justify-center h-full px-6 md:px-[120px] pt-[70px] md:pt-[90px]">
+      <div className="relative z-[2] flex flex-col justify-center h-full px-6 md:px-[60px] lg:px-[120px] pt-[70px] md:pt-[90px]">
         <motion.h1
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease, delay: 1.3 }}
-          className="inline-flex items-center justify-center px-12 py-[18px] bg-accent text-white text-sm font-semibold tracking-[3px] mt-9 w-fit shadow-[0_10px_30px_rgba(232,150,90,0.3),0_4px_12px_rgba(0,0,0,0.15)] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-[3px] hover:shadow-[0_16px_40px_rgba(232,150,90,0.3)]"
+          className="inline-flex items-center justify-center px-8 sm:px-12 py-4 sm:py-[18px] bg-accent text-white text-xs sm:text-sm font-semibold tracking-[2px] sm:tracking-[3px] mt-7 sm:mt-9 w-full sm:w-fit shadow-[0_10px_30px_rgba(232,150,90,0.3),0_4px_12px_rgba(0,0,0,0.15)] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-[3px] hover:shadow-[0_16px_40px_rgba(232,150,90,0.3)]"
         >
           EXPLORAR COLECCION
         </motion.a>

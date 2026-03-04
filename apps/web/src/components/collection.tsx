@@ -6,7 +6,7 @@ export function Collection() {
   return (
     <section
       id="coleccion"
-      className="bg-bg-dark px-6 md:px-[120px] py-[60px] md:py-[100px] flex flex-col items-center gap-16"
+      className="bg-bg-dark px-6 md:px-10 lg:px-[120px] py-[60px] md:py-20 lg:py-[100px] flex flex-col items-center gap-16"
     >
       <ScrollReveal>
         <span className="text-[11px] font-semibold tracking-[4px] text-accent">
@@ -20,17 +20,17 @@ export function Collection() {
         </h2>
       </ScrollReveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-8 w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
         {PRODUCTS.map((product, i) => (
           <ScrollReveal key={product.name} direction="scale" delay={i * 0.1}>
             <div className="flex flex-col group transition-transform duration-600 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1.5">
-              <div className="w-full h-[400px] md:h-[480px] overflow-hidden relative">
+              <div className="w-full h-[350px] sm:h-[400px] lg:h-[480px] overflow-hidden relative">
                 <Image
                   src={product.image}
                   alt={product.alt}
                   fill
                   className="object-cover transition-transform duration-800 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
               <div className="py-5 flex flex-col gap-2">

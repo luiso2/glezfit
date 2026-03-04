@@ -4,10 +4,10 @@ import { ScrollReveal } from "./ui/scroll-reveal";
 
 export function InstagramGrid() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4">
+    <div className="grid grid-cols-2 lg:grid-cols-4">
       {INSTAGRAM_IMAGES.map((src, i) => (
         <ScrollReveal key={src} direction="scale" delay={i * 0.1}>
-          <div className="h-[200px] md:h-[300px] overflow-hidden relative group">
+          <div className="h-[180px] sm:h-[220px] lg:h-[300px] overflow-hidden relative group">
             <Image
               src={src}
               alt={`Instagram ${i + 1}`}

@@ -120,6 +120,16 @@ export function Footer() {
               Hecho con amor en Mexico
             </span>
           </div>
+          <div className="flex justify-center pt-2">
+            <a
+              href="https://merktop.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[11px] text-text-placeholder tracking-[1px] transition-colors duration-300 hover:text-accent"
+            >
+              Powered by <span className="font-semibold">Merktop</span>
+            </a>
+          </div>
         </div>
       </footer>
     </>

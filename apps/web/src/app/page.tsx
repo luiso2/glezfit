@@ -7,6 +7,7 @@ import { Metrics } from "@/components/metrics";
 import { InstagramGrid } from "@/components/instagram-grid";
 import { FooterCta } from "@/components/footer-cta";
 import { Footer } from "@/components/footer";
+import { ChatBot } from "@/components/chat-bot";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <InstagramGrid />
       <FooterCta />
       <Footer />
+      <ChatBot />
     </>
   );
 }
